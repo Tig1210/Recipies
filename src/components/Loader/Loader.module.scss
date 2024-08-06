@@ -1,0 +1,45 @@
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid wheat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  animation-name: rotateCircle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  .line {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background-color: white;
+  }
+
+  .line:nth-child(1) {
+    left: -10px;
+  }
+  .line:nth-child(2) {
+    left: -10px;
+    rotate: 90deg;
+  }
+  .line:nth-child(3) {
+    left: -10px;
+    rotate: 45deg;
+  }
+  .line:nth-child(4) {
+    left: -10px;
+    rotate: 135deg;
+  }
+}
