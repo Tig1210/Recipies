@@ -6,6 +6,8 @@
 - React
 - react-redux-toolkit
 - react-router
+- SASS
+- module css
 
 Описание:
 - На главной странице появляется рандомный рецепт
